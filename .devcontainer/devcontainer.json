@@ -22,7 +22,9 @@
 		"vscjava.vscode-spring-initializr",
 		"pivotal.vscode-spring-boot",
 		"vscjava.vscode-spring-boot-dashboard",
-		"pivotal.vscode-boot-dev-pack"
+		"pivotal.vscode-boot-dev-pack",
+		"shengchen.vscode-checkstyle",
+		"sonarsource.sonarlint-vscode"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
