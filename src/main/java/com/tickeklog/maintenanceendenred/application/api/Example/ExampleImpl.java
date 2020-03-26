@@ -2,7 +2,7 @@ package com.tickeklog.maintenanceendenred.application.api.Example;
 
 import java.util.List;
 import javax.annotation.security.PermitAll;
-import com.tickeklog.maintenanceendenred.application.model.userModel;
+import com.tickeklog.maintenanceendenred.application.model.UserModel;
 import com.tickeklog.maintenanceendenred.core.services.example.IExampleServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ public class ExampleImpl implements IExample {
 	private IExampleServices userService;
 
     @Override
-    public ResponseEntity<List<userModel>> getById() {
+    public ResponseEntity<List<UserModel>> getById() {
         // TODO Auto-generated method stub
         return  ResponseEntity.ok(userService.GetUser());
     }

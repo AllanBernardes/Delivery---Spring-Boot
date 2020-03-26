@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class userModel {
+public class UserModel {
 
     private static final long serialVersionUID = -194006958991920051L;
 
