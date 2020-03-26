@@ -1,4 +1,5 @@
-package com.tickeklog.maintenanceendenred.application.api.Example;
+package com.tickeklog.maintenanceendenred.application.api.example;
+
 import java.util.List;
 import com.tickeklog.maintenanceendenred.application.model.UserModel;
 import org.springframework.http.ResponseEntity;
@@ -7,9 +8,10 @@ import io.swagger.annotations.ApiOperation;
 /**
  * IExample
  */
+
 public interface IExample {
 
-    @GetMapping("api/user/getAll")
-	@ApiOperation("Retorna lista de usuarios.")
-	ResponseEntity<List<UserModel>> getById();
+  @GetMapping("api/user/getAll")
+  @ApiOperation("Retorna lista de usuarios.")
+  ResponseEntity<List<UserModel>> getById();
 }

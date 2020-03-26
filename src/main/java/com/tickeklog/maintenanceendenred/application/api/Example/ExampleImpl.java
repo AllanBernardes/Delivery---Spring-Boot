@@ -1,4 +1,4 @@
-package com.tickeklog.maintenanceendenred.application.api.Example;
+package com.tickeklog.maintenanceendenred.application.api.example;
 
 import java.util.List;
 import javax.annotation.security.PermitAll;
@@ -17,15 +17,12 @@ import io.swagger.annotations.Api;
 @Api(tags = "REST - Resource de Usuarios")
 public class ExampleImpl implements IExample {
 
-    @Autowired
-	private IExampleServices userService;
+  @Autowired
+private IExampleServices userService;
 
-    @Override
+  @Override
     public ResponseEntity<List<UserModel>> getById() {
         // TODO Auto-generated method stub
-        return  ResponseEntity.ok(userService.GetUser());
-    }
-
-    
-
+    return  ResponseEntity.ok(userService.getUser());
+  }
 }

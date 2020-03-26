@@ -12,13 +12,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ExampleServicesImpl implements IExampleServices {
-
-    @Override
-    public List<UserModel> GetUser() {
+  @Override
+    public List<UserModel> getUser() {
         // TODO Auto-generated method stub
-        return null;
-    }
-
- 
-
+    return null;
+  }
 }
