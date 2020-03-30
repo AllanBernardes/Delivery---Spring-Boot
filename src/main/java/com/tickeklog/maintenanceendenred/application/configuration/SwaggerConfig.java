@@ -14,6 +14,7 @@ import springfox.documentation.builders.PathSelectors;
 /**
  * SwaggerConfig
  */
+
 @Configuration
 @EnableSwagger2WebMvc
 @Import(SpringDataRestConfiguration.class)
@@ -21,7 +22,7 @@ public class SwaggerConfig {
 
   @Bean
   public Docket api() {
-      return new Docket(DocumentationType.SWAGGER_2)
+    return new Docket(DocumentationType.SWAGGER_2)
               .apiInfo(apiInfo())
               .select()
               .apis(RequestHandlerSelectors.any())
@@ -29,8 +30,8 @@ public class SwaggerConfig {
               .build();
   }
 
-      private ApiInfo apiInfo() {
-        return new ApiInfo("Ticket Log API Document","API Document for Developers", String.format("0.0.1-SNAPSHOT"),
+  private ApiInfo apiInfo() {
+    return new ApiInfo("Ticket Log API Document","API Document for Developers", String.format("0.0.1-SNAPSHOT"),
             "Terms of service", null, "License of API", "API license URL", Collections.emptyList());
   }
   

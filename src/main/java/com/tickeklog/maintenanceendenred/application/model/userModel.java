@@ -1,23 +1,33 @@
 package com.tickeklog.maintenanceendenred.application.model;
 
-import lombok.AllArgsConstructor;
+import com.tickeklog.maintenanceendenred.domain.entity.example.UserImpl;
+
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 /**
  * userModel
  */
 @Data
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 public class UserModel {
 
-    private static final long serialVersionUID = -194006958991920051L;
 
-    private Long id;
-    private String firstName;
-    private int age;
-    private String email;
+  private Long id;
+  private String firstName;
+  private int age;
+  private String email;
+
+  public UserModel(Long id, String firstName, int age, String email) {
+    this.id = id;
+    this.firstName = firstName;
+    this.age = age;
+    this.email = email;
+  }
+
+  public UserImpl fromModel(final UserModel usermodel) { 
+    return new UserImpl(usermodel.getId(), usermodel.getFirstName(), usermodel.getAge(), usermodel.getEmail());
+  }
+
 }
