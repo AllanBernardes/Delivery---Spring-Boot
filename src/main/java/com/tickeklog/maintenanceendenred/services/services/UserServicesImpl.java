@@ -7,6 +7,8 @@ import com.tickeklog.maintenanceendenred.infrastructure.repositories.example.Rep
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import reactor.core.publisher.Flux;
+
 /**
  * ExampleServicesImpl
  */
@@ -20,7 +22,13 @@ public class UserServicesImpl implements IUser {
   @Override
   public UserImpl add(UserImpl user) {
     // TODO Auto-generated method stub
-    return rep.insert(user);
+    return rep.add(user);
+  }
+
+  @Override
+  public Flux<UserImpl> getall() {
+    // TODO Auto-generated method stub
+    return rep.getall();
   }
 
  

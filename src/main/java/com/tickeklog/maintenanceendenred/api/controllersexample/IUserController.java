@@ -5,7 +5,7 @@ import javax.validation.Valid;
 import com.tickeklog.maintenanceendenred.application.model.UserModel;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import io.swagger.annotations.ApiOperation;
@@ -15,7 +15,7 @@ import io.swagger.annotations.ApiOperation;
 
 public interface IUserController {
 
-  @GetMapping("api/user/create")
+  @PostMapping("api/user/create")
   @ApiOperation("Insert user.")    
   ResponseEntity<?> addUser(@Valid @RequestBody final UserModel usermodel);
 }
