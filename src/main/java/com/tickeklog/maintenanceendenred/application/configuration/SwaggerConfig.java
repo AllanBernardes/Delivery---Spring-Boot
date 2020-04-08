@@ -13,6 +13,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 import springfox.documentation.builders.PathSelectors;
 /**
  * SwaggerConfig
+  * Create by Allan Bernardes Flores
+ * Data: 04/2020 
  */
 
 @Configuration
