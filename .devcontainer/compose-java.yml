@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  java:
+    privileged: true
+    build:
+      context: .
+      dockerfile: ImgJava/Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - DB_USER=postgres
+      - DB_PASSWORRD=test
+      - DB_URL=jdbc:postgresql://db:5432/test
+    volumes:
+      - ..:/workspace:cached
+    command: /bin/sh -c "while sleep 1000; do :; done"

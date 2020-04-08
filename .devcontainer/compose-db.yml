@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  oracle-db:
+    build:
+      context: .
+      dockerfile: ImgOracle/Dockerfile
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: test
+    ports: 
+      - 1521:1521
+      
